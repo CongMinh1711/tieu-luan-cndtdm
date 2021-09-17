@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Characters The Witcher </title>
+<meta charset="UTF-8">
+<meta name="author" content="Doan Phi Long">
+<meta name="date" content="3/31/2020">
+<link rel="stylesheet" type="text/css" href="../CSS 2/witcher.css">
+<link rel="stylesheet" type="text/css" href="../CSS 2/witcherfooter.css">
+<link rel="stylesheet" type="text/css" href="../CSS 2/witcherslide.css">
+<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=MedievalSharp'>
+<link rel="shortcut icon" type="image/gif" href="../Photos1/wolficonnew.gif">
+</head>
+
+
+<!------------------------------BODY CONTENT-------------------------------->
+
+
+<body>
+	<div>
+	    <img class="bg" src="../Photos1/witcherbg4k.jpg" alt="The Witcher background">
+	</div>
+	<div>
+		<img class="logo" src="../Photos1/witcherlogo1.png" alt="The Witcher logo">
+	</div>
+
+	<div class="bar">
+		<ul class="menu">
+			<li> 
+				<a href="witcher.html" target="_self">Home</a> 
+			</li>
+		  <li class="dropdown"> 
+		    <a class="dropcontent" href="#" target="_self">
+		    	<div style="display:inline-block">Informations</div>
+		    	<img class="dropicon" src="../Photos1/whiteicon1.png" alt="dropdown icon">
+		    </a>
+		    <div class="dropdown-menu">
+		    	  <a href="witcher-story1.html" target="_self">The Witcher season 1</a>
+		    	  <a href="#" target="_self">The Witcher season 2</a>
+		    	  <a href="#" target="_self">The Witcher 1 (Game)</a>
+		    	  <a href="#" target="_self">The Witcher 2:Assassins or Kings</a>
+		    	  <a href="#" target="_self">The Witcher 3:Wild hunt</a>
+		    </div>
+		  </li>
+		  <li class="dropdown">
+        <a class="dropcontent menu-bgcolor" href="witcher-characters.html" target="_self">
+          <img class="menu-icon" src="../Photos1/wolficonnew.gif" alt="The Witcher wolf icon"> 
+          <div style="display:inline-block"> Characters </div>
+          <img class="dropicon-black" src="../Photos1/black-arrow-icon-new3.png" alt="black dropdown icon">          
+        </a>
+        <div class="dropdown-menu">
+            <a href="witcher-characters-main.html" target="_self">Main characters</a>
+            <a href="witcher-characters-recurring.html" target="_self">Recurring characters</a>
+            <a href="witcher-characters-notableguest.html" target="_self">Notable guests</a>
+            <a href="#" target="_self">Monsters</a>
+        </div>
+      </li>
+		  <li>
+		    <a href="witcher-episodes.html" target="_self">Episodes</a>
+		  </li>
+		</ul>
+	</div>
+
+    <div class="container-slide">
+        <div class="container-slide1">
+          <a href="witcher-characters-main.html" target="_self">
+            <div class="mySlides">
+                <div class="textslide-container">
+                  <img class="rightmenu-logo" src="../Photos1/witcherlogo4.jpg" alt="The Witcher logo 1">
+                  <p class="textslide"> Main characters </p>
+                </div>
+                <div class="picture-slide">
+                    <img src="../Photos1/thewitchermain.jpg">
+                </div>
+            </div>
+          </a>
+          
+          <a href="witcher-characters-recurring.html" target="_self">
+            <div class="mySlides">
+                <div class="textslide-container" style="width:290px">
+                  <img class="rightmenu-logo" src="../Photos1/witcherlogo2.png" alt="The Witcher logo 2">
+                  <p class="textslide"> Recurring characters </p>
+                </div>
+                <div class="picture-slide">
+                    <img src="../Photos1/eist2.jpg" style="width:700px;height:325px">
+                </div>
+            </div>
+          </a>
+
+          <a href="witcher-characters-notableguest.html" target="_self">
+            <div class="mySlides">
+                 <div class="textslide-container">
+                  <img class="rightmenu-logo" src="../Photos1/witcherlogo3.jpg" alt="The Witcher logo 3">
+                  <p class="textslide"> Notable guests </p>
+                </div>
+                <div class="picture-slide">
+                    <img src="../Photos1/pavetta1.jpg">
+                </div>
+            </div>
+          </a>
+    
+            <div class="mySlides">
+                 <div class="textslide-container" style="width:215px">
+                  <img class="rightmenu-logo" src="../Photos1/wolf1.png" alt="The Witcher logo 4" style="width:65px;height:55px;margin-left:5px;margin-top:3px">
+                  <p class="textslide" style="left:80px"> Monsters </p>
+                </div>
+                <div class="picture-slide">
+                    <img src="../Photos1/thewitchermonster1.jpg">
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+<!--  <div class="caption-container">
+    <p id="caption"></p>
+  </div>-->
+
+            <div class="row">
+                <div class="column">
+                  <div class="demo out-column column-position1">
+                    <img class="cursor" src="../Photos1/thewitchermain.jpg" onclick="currentSlide(1)" alt="The Woods">
+                  </div>               
+                </div>
+              
+                <div class="column">
+                  <div class="demo out-column">
+                    <img class="cursor" src="../Photos1/eist2.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="demo out-column column-position2">
+                    <img class="cursor" src="../Photos1/pavetta1.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="demo out-column column-position3">
+                    <img class="cursor" src="../Photos1/thewitchermonster1.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!------------------------------ END BODY CONTENT-------------------------->
+
+
+
+
+    <div class="footer" style="top:1000px">
+      <div class="colorfooter">
+        <img  class="iconbot" src="../Photos1/thewitcherfooter.png" alt="The Witcher wolf icon">
+        <div class="textposition">
+          <p class="textfooter"> Developer: Doan Phi Long</p>
+          <p class="textfooter"> Phone: 0359559225</p>
+          <p class="textfooter"> Email: doanphilong2k@gmail.com</p>
+          <a href="#" target="_blank">
+            <img class="iconlogo" src="../Photos1/iconfbwhite-new2.png" alt="White facebook logo">
+          </a>
+          <a href="#" target="_blank">
+            <img class="iconlogo" src="../Photos1/iconinstawhite.png" alt="White instagram logo">
+          </a>
+          <a href="#" target="_blank">
+            <img class="iconlogo" src="../Photos1/iconmail3.png" alt="White mail logo">
+          </a>
+        </div>
+      </div>
+    </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if(n > slides.length) {slideIndex = 1}
+  if(n < 1) { slideIndex = slides.length }
+  for(i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+  for(i = 0; i < dots.length; i++) {
+	dots[i].className = dots[i].className.replace(" active","");
+}
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

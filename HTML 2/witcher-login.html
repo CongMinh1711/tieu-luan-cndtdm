@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Witcher wiki</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Doan Phi Long">
+<meta name="date" content="3/21/2020">
+<link rel="stylesheet" type="text/css" href="../CSS 2/witcher.css">
+<link rel="stylesheet" type="text/css" href="../CSS 2/witcherfooter.css">
+<link rel="stylesheet" type="text/css" href="../CSS 2/witcherlogin.css">
+<link rel="shortcut icon" type="image/gif" href="../Photos1/wolficonnew.gif">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<!------------------------------BODY CONTENT-------------------------------->
+
+
+
+<body>
+	<div>
+	    <img class="bg" src="../Photos1/witcherbg4.jpg" alt="The Witcher background">
+	</div>
+
+	<div id="popup-login" class="login-container">
+		<img class="login-image1" src="../Photos1/wolfborder2.png" alt="Wolf head icon">
+		<p class="login-container-lg">Login</p>
+		<form>
+			<table class="login-form">
+				<tr>
+					<td>
+						<img class="usericon" src="../Photos1/grey-user4.png" alt="grey user icon">
+						<span class="devide"></span>
+						<input class="login-container-user" type="text" placeholder="Username" id="myLogin">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="passicon" src="../Photos1/grey-password.png" alt="grey password icon">
+						<span class="devide2"></span>
+						<input class="login-container-user" type="password" placeholder="Password" id="myPassword">
+					</td>
+				</tr>
+			</table>
+
+			<div>
+				<button type="button" id="btLogin" onclick="signIn()">
+					<img src="../Photos1/wolficonnew.gif" alt="wolf icon gif">
+				    <p>Join</p>
+			    </button>
+
+			    <button type="button" id="btFacebook">
+			    	<p>Join on Facebook</p>
+			    	<img src="../Photos1/iconfacebookwhite.png" alt="icon facebook white fb">
+			    </button>
+
+			    <button type="button" id="btTwitter">
+			    	<p>Join on Twitter</p>
+			    	<img src="../Photos1/icontwitterwhite2.png" alt="icon twitter white tw">
+			    </button>
+
+			    <button type="button" id="btGoogle">
+			    	<p>Join on Google</p>
+			    	<img src="../Photos1/icongooglewhite.png" alt="icon google white gg">
+			    </button>
+
+			    <a href="#" target="_blank">
+			    	<p class="sign-up">Sign up</p>
+			    </a>
+
+			    <span class="devide3"></span>
+
+			    <a href="#" target="_blank">
+			    	<p class="forgot-pass">Forgot password</p>
+			    </a>
+			</div>
+		</form>
+	</div>
+
+    <div id="popup-image">
+	    <img id="login-image" src="../Photos1/thewitcherfooter.png" alt="the witcher login icon">
+	</div>
+
+
+
+<script language="javascript">
+
+	function signIn(){
+
+		var adminLogin = document.getElementById("myLogin").value;
+        var adminPassword = document.getElementById("myPassword").value;
+
+		if(adminLogin == "doanphilong2k" && adminPassword == "philongk2")
+		{
+			window.location.href = "witcher-long.html";
+		}
+		else {
+			alert("Undefined ID or password");
+		}
+	}
+    
+    var inputPASS = document.getElementById("myPassword");
+    inputPASS.addEventListener("keyup", function(event){
+        if(event.keyCode === 13)
+        {
+        	event.preventDefault();
+        	document.getElementById("btLogin").click();
+        }
+    });
+</script> 
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Witcher wiki</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Doan Phi Long">
+<meta name="date" content="3/21/2020">
+<link rel="stylesheet" type="text/css" href="../CSS 2/witcher.css">
+<link rel="stylesheet" type="text/css" href="../CSS 2/witcherfooter.css">
+<link rel="stylesheet" type="text/css" href="../CSS 2/witcherlogin.css">
+<link rel="shortcut icon" type="image/gif" href="../Photos1/wolficonnew.gif">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+
+<!------------------------------BODY CONTENT-------------------------------->
+
+
+<body>
+	<div>
+	    <img class="bg" src="../Photos1/witcherbg.jpg" alt="The Witcher background">
+	</div>
+	<div>
+		<img class="logo" src="../Photos1/witcherlogo1.png" alt="The Witcher logo">
+	</div>
+	
+	<div class="bar">
+		<ul class="menu" style="border-left-color:silver">
+			<li style="position: relative">
+				<img class="menu-icon" src="../Photos1/wolficonnew.gif" alt="The Witcher wolf icon">
+				<a class="menu-bgcolor" href="witcher.html" target="_self">Home</a> 
+			</li>
+		    <li class="dropdown"> 
+		    	<a class="dropcontent" href="#" target="_self">
+		    	    <div style="display:inline-block">Informations</div>
+		    		<img class="dropicon" src="../Photos1/whiteicon1.png" alt="dropdown icon">
+
+		    	</a>
+		    	<div class="dropdown-menu">
+		    	    <a href="witcher-story1.html" target="_self">The Witcher season 1</a>
+		    	    <a href="#" target="_self">The Witcher season 2</a>
+		    	    <a href="#" target="_self">The Witcher 1 (Game)</a>
+		    	    <a href="#" target="_self">The Witcher 2:Assassins or Kings</a>
+		    	    <a href="#" target="_self">The Witcher 3:Wild hunt</a>
+		    	</div>
+		    </li>
+		    <li class="dropdown">
+                <a class="dropcontent" href="witcher-characters.html" target="_self">
+                    <div style="display:inline-block"> Characters </div>
+                    <img class="dropicon" src="../Photos1/whiteicon1.png" alt="dropdown icon" style="left:140px">          
+                </a>
+                <div class="dropdown-menu">
+                    <a href="witcher-characters-main.html" target="_self">Main characters</a>
+                    <a href="witcher-characters-recurring.html" target="_self">Recurring characters</a>
+                    <a href="witcher-characters-notableguest.html" target="_self">Notable guests</a>
+                    <a href="#" target="_self">Monsters</a>
+                </div>
+            </li>
+		    <li>
+		    	<a href="witcher-episodes.html" target="_self">Episodes</a>
+		    </li>
+
+		    <li>
+		    	<form class="search-form">
+		    		<div class="popUpSb">
+		    		    <input id="sb" class="search-bar" type="text" placeholder="Search...">
+		    		    <div id="cb" class="close-button" onclick="myCloseBtn()">
+		    		        <i class="fa fa-close"></i>
+		    		    </div>
+		    		</div>
+		    		<!--<div id="cb" class="close-button" onclick="myCloseBtn()">
+		    		    <i class="fa fa-close"></i>
+		    		</div>-->
+		    		<button class="search-button" type="button" onclick="mySearchBar()"><i class="fa fa-search"></i></button> 
+		    	</form>
+		    </li>
+		</ul>
+	</div>
+
+	<div class="titletop"> Movies </div>
+
+	<div class="container0">
+		<div class="photos">
+			<a href="witcher-story1.html" target="_self">
+				<img src="../Photos1/witcherss1-1.jpg" alt="The Witcher season 1 Netflix">
+			    <div class="overlay">
+				    <div class="textphotos"> The Witcher season 1</div>
+			    </div>
+			</a>
+		</div>
+
+		<div class="photos1">
+			<a href="#" target="_self">
+			    <img src="../Photos1/witcherss2.jpg" alt="The Witcher season 2 Netflix">
+			    <div class="overlay">
+				    <div class="textphotos"> The Witcher season 2</div>
+			    </div>
+			</a>
+		</div>
+	</div>
+
+	<div class="titlemid"> Video games </div>
+
+	<div class="container1">
+		<div class="photos2">
+			<a href="#" target="_self">
+			    <img src="../Photos1/gamewitcher1.jpg" alt="The Witcher 1">
+			    <div class="overlay">
+				    <div class="textphotos" style="left:190px"> The Witcher 1 </div>
+			    </div>
+			</a>
+		</div>
+
+		<div class="photos3">
+			<a href="#" target="_self">
+			    <img src="../Photos1/gamewitcher2.jpg" alt="The Witcher 2:Assassins or Kings">
+			    <div class="overlay">
+				    <div class="textphotos" style="left:104px"> The Witcher 2: Assassins or Kings </div>
+			    </div>
+			</a>
+		</div>
+
+		<div class="photos4">
+			<a href="#" target="_self">
+			    <img src="../Photos1/gamewitcher3.jpg" alt="The Witcher 3:Wild hunt">
+			    <div class="overlay">
+				    <div class="textphotos"> The Witcher 3:Wild hunt </div>
+			    </div>
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+<!----------------------------- LEFT POPUP MENU ------------------------->
+
+
+<div id="sidenav">
+	<a href="witcher-login.html" target="_self" id="login">
+	    <p> Login </p>
+	    <!--<img src="../Photos1/grey-user2.png" alt="grey user icon">-->
+	    <i class='fas fa-user-circle sidenav-iconlogin'></i>
+	</a>
+	<a href="#" target="_self" id="dev"></a>
+	<a href="#" target="_self" id="information"></a>
+</div>
+
+
+
+
+<!---------------------------- END BODY CONTENT----------------------->
+
+
+	<div class="footer">
+      <div class="colorfooter">
+        <img  class="iconbot" src="../Photos1/thewitcherfooter.png" alt="The Witcher wolf icon">
+        <div class="textposition">
+          <p class="textfooter"> Developer: Doan Phi Long</p>
+          <p class="textfooter"> Phone: 0359559225</p>
+          <p class="textfooter"> Email: doanphilong2k@gmail.com</p>
+          <a href="#" target="_blank">
+            <img class="iconlogo" src="../Photos1/iconfbwhite-new2.png" alt="White facebook logo">
+          </a>
+          <a href="#" target="_blank">
+            <img class="iconlogo" src="../Photos1/iconinstawhite.png" alt="White instagram logo">
+          </a>
+          <a href="#" target="_blank">
+            <img class="iconlogo" src="../Photos1/iconmail3.png" alt="White mail logo">
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+<script language="javascript">
+	var searchBar = document.getElementById("sb");
+	var closeButton = document.getElementById("cb");
+    var i = 0;
+
+    function mySearchBar()
+    {
+    	if(i == 0)
+    	{
+    		searchBar.style.display = "block";
+    		closeButton.style.display = "block";
+    		i++;
+    		searchBar.setAttribute("id", "pop-up");
+    		closeButton.setAttribute("id", "popup-btn");
+    	}
+    	else{
+    		searchBar.style.display = "none";
+    		closeButton.style.display = "none";
+    		i--;
+    	}
+    }
+
+    function myCloseBtn()
+    {
+    	searchBar.style.display = "none";
+    	closeButton.style.display = "none";
+    	i--;
+    }
+</script>
+</body>
+</html>
